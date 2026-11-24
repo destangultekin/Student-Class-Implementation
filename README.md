@@ -10,3 +10,27 @@ A Python example demonstrating object-oriented inheritance with `Person` as the 
 ## Usage
 ```bash
 python3 main.py
+
+## Diagram
+
+```mermaid
+classDiagram
+    class Person {
+        +int age
+        +get_age() int
+    }
+
+    class Student {
+        +str id
+        +get_gpa() float
+    }
+
+    class Professor {
+        +str title
+        +teach() None
+    }
+
+    Person <|-- Student
+    Person <|-- Professor
+    Student "1..*" -- "1..*" Professor
+```

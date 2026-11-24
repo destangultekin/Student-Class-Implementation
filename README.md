@@ -12,7 +12,6 @@ A Python example demonstrating object-oriented inheritance with `Person` as the 
 python3 main.py
 
 ## Diagram
-
 ```mermaid
 classDiagram
     class Person {
